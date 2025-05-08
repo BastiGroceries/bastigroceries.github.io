@@ -90,8 +90,10 @@
       <div class="form-section">
         <h2>Forgot Your Password?</h2>
         <p>Enter your email address below and we'll send you a link to reset your password.</p>
-        <form>
-          <input type="email" placeholder="Enter your email" required />
+        <form action="https://formsubmit.co/bastigroceries@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Password Reset Request">
+          <input type="email" name="email" placeholder="Enter your email" required />
           <button type="submit">Send Reset Link</button>
         </form>
         <a href="#" class="back-link">Back to Sign In</a>
